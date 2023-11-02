@@ -1,4 +1,11 @@
-### Hi there 👋
+# Opa, tudo bom? Me chamo **Marcos** e bem-vindo ao meu GitHub! 👋
+
+- Eu estou atualmente estudando para a área de *Front-End Development*.
+- Eu estou atualmente aprendendo **NextJS**.
+- Procuro por oportunidades no mercado de trabalho.
+- Meu número de contato é **(+55) 34 98804-9213**.
+- Minhas principais habilidades e ferramentas:
+- 
 
 <!--
 **M4rcosz/m4rcosz** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
