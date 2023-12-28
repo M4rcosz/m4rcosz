@@ -1,7 +1,7 @@
-# Opa, tudo bom? Me chamo **Marcos** e bem-vindo ao meu GitHub! 👋
+# Opa, tudo bom? Me chamo **Marcos** e bem-vindo ao meu perfil do GitHub! 👋
 
 - 🔭 Eu estou atualmente estudando para a área de *Front-End Development*.
-- 🌱 Eu estou atualmente aprendendo **NextJS**.
+- 🌱 Eu estou atualmente aprendendo **NextJS e JEST/Testing Library**.
 - 💼 Procuro por oportunidades no mercado de trabalho.
 - 📫 Meu número de contato é **(+55) 34 98804-9213**.
 
