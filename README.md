@@ -1,25 +1,21 @@
 # Opa, tudo bom? Me chamo **Marcos** e bem-vindo ao meu perfil do GitHub! 👋
 
-- 🔭 Eu estou atualmente estudando para a área de *Front-End Development*.
-- 🌱 Eu estou atualmente aprendendo **NextJS e JEST/Testing Library**.
-- 💼 Procuro por oportunidades no mercado de trabalho.
-- 📫 Meu número de contato é **(+55) 34 98804-9213**.
+- Estou atuando na cVortex como Analista de Suporte e Sucesso do Cliente.
+- Estou estudando e migrando para Cybersecurity.
+- Possuo experiência em desenvolvimento web criando projetos autônomos como um Full-Stack.
+- Meu número de contato é **(+55) 34 98804-9213**.
 
 ## Ferramentas e Tecnologias
 
-  <div>
-    <img width="100px" loading="lazy" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain-wordmark.svg" />
-    <img width="100px" loading="lazy" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain-wordmark.svg" />
-    <img width="100px" loading="lazy" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg" />
-    <img width="100px" loading="lazy" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-plain.svg" />
-    <img width="100px" loading="lazy" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg" />
-    <img width="100px" loading="lazy" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original-wordmark.svg" />
-    <img width="100px" loading="lazy" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg" />
-    <img width="100px" loading="lazy" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original-wordmark.svg" />
-    <img width="100px" loading="lazy" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-plain-wordmark.svg" />
-    <img width="100px" loading="lazy" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jest/jest-plain.svg" />
-          
-  </div>
+- HTML/CSS
+- JavaScript/TypeScript/React
+- Python/FastAPI
+- SQL
+- MySQL/DBeaver
+- Postman/Consumo de API REST e GraphQL
+- MongoDB/Mongoose
+- Git/GitHub
+- Tailwind
 
 <!--
 ## Contatos
