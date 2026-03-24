@@ -1,7 +1,6 @@
 # Opa, tudo bom? Me chamo **Marcos** e bem-vindo ao meu perfil do GitHub! 👋
 
 - Estou atuando na cVortex como Analista de Suporte e Sucesso do Cliente.
-- Estou estudando e migrando para Cybersecurity.
 - Possuo experiência em desenvolvimento web criando projetos autônomos como um Full-Stack.
 - Meu número de contato é **(+55) 34 98804-9213**.
 
