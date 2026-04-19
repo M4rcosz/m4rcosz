@@ -7,14 +7,16 @@
 ## Ferramentas e Tecnologias
 
 - HTML/CSS
-- JavaScript/TypeScript/React
-- Python/FastAPI
+- JavaScript/TypeScript/React/NextJS
+- NodeJS/NestJS/Express/Prisma
+- Python/FastAPI/SQLAlchemy
 - SQL
-- MySQL/DBeaver
+- MySQL/PostgreSQL
 - Postman/Consumo de API REST e GraphQL
-- MongoDB/Mongoose
+- MongoDB
 - Git/GitHub
 - Tailwind
+- Docker
 
 <!--
 ## Contatos
