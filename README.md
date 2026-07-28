@@ -1,14 +1,14 @@
 <p align="center">
-  <img src="./assets/header.svg" alt="Marcos — Backend Engineer" width="100%">
+  <img src="./assets/header.svg" alt="Marcos, Backend Engineer" width="100%">
 </p>
 
 <p align="center">
-  <a href="https://linkedin.com/in/m4rcosz"><img src="https://img.shields.io/badge/LINKEDIN-000000?style=for-the-badge&logo=linkedin&logoColor=B01030&labelColor=000000"></a>
-  <img src="https://img.shields.io/badge/OPEN_TO_REMOTE-000000?style=for-the-badge&labelColor=8B0000">
-  <img src="https://img.shields.io/badge/UTC−3-000000?style=for-the-badge&labelColor=000000">
+  <a href="https://linkedin.com/in/m4rcosz"><img src="https://img.shields.io/badge/LINKEDIN-0D0D10?style=for-the-badge&logo=linkedin&logoColor=F2ECEC&labelColor=8B0000"></a>
+  <img src="https://img.shields.io/badge/OPEN_TO_REMOTE-8B0000?style=for-the-badge&labelColor=8B0000">
+  <img src="https://img.shields.io/badge/UTC−3-0D0D10?style=for-the-badge&labelColor=0D0D10">
 </p>
 
-I build backends meant for production, not for `localhost`: well-defined API contracts, data that stays consistent under concurrency, automated tests, and continuous delivery. At cVortex I turned manual support workflows into Python automations and worked on LLM integrations — Gemini API, RAG pipeline — which put me in direct contact with what an unreliable system actually costs the people using it.
+I build backends meant for production, not for `localhost`: well-defined API contracts, data that stays consistent under concurrency, automated tests, and continuous delivery. At cVortex I turned manual support workflows into Python automations and worked on LLM integrations (Gemini API, RAG pipeline) that put me in direct contact with what an unreliable system actually costs the people using it.
 
 > [!NOTE]
 > Currently focused on backend services that treat LLMs as a dependency like any other: retries, cost awareness, and failure modes that don't take the request down with them.
@@ -63,21 +63,21 @@ flowchart LR
 </details>
 
 > [!TIP]
-> **The decision that taught me the most:** treating the payment webhook as *at-least-once* delivery instead of *exactly-once*. The idempotency key fixed the symptom — understanding the provider's actual guarantee changed how I model every external integration since.
+> **The decision that taught me the most:** treating the payment webhook as *at-least-once* delivery instead of *exactly-once*. The idempotency key fixed the symptom. Understanding the provider's actual guarantee changed how I model every external integration since.
 
 <p>
-  <a href="https://github.com/M4rcosz/raizes-do-nordeste"><img src="https://img.shields.io/badge/BACKEND-000000?style=flat-square&logo=nestjs&logoColor=B01030&labelColor=8B0000"></a>
-  <a href="https://github.com/M4rcosz/nexio-frontend"><img src="https://img.shields.io/badge/STOREFRONT-000000?style=flat-square&logo=nextdotjs&logoColor=B01030&labelColor=8B0000"></a>
-  <a href="https://nexio-frontend-wheat.vercel.app"><img src="https://img.shields.io/badge/▶_LIVE_DEMO-000000?style=flat-square&labelColor=B01030"></a>
+  <a href="https://github.com/M4rcosz/raizes-do-nordeste"><img src="https://img.shields.io/badge/BACKEND-0D0D10?style=flat-square&logo=nestjs&logoColor=F2ECEC&labelColor=8B0000"></a>
+  <a href="https://github.com/M4rcosz/nexio-frontend"><img src="https://img.shields.io/badge/STOREFRONT-0D0D10?style=flat-square&logo=nextdotjs&logoColor=F2ECEC&labelColor=8B0000"></a>
+  <a href="https://nexio-frontend-wheat.vercel.app"><img src="https://img.shields.io/badge/▶_LIVE_DEMO-B01030?style=flat-square&labelColor=B01030"></a>
 </p>
 
 <p align="center"><sub>†&nbsp;&nbsp;&nbsp;&nbsp;†&nbsp;&nbsp;&nbsp;&nbsp;†</sub></p>
 
 <h2>&#8224; &nbsp;<i>II.</i> &nbsp;S U P P O R T &nbsp; A U T O M A T I O N &nbsp; &amp; &nbsp; L L M<br><sub><sup>cVortex</sup></sub></h2>
 
-Python automations that removed recurring manual work from the support team — data extraction, reporting, ticket triage — saving hours per month. I also worked on Gemini API integrations and a RAG pipeline over our internal knowledge base: chunking and retrieval strategy, prompt structure, and handling the cases where the model returns nothing useful.
+Python automations that removed recurring manual work from the support team (data extraction, reporting, ticket triage), saving hours per month. I also worked on Gemini API integrations and a RAG pipeline over our internal knowledge base: chunking and retrieval strategy, prompt structure, and handling the cases where the model returns nothing useful.
 
-<sub>`Proprietary code` — happy to walk through the architecture and trade-offs in a conversation.</sub>
+<sub>`Proprietary code`. Happy to walk through the architecture and trade-offs in a conversation.</sub>
 
 <p align="center"><sub>†&nbsp;&nbsp;&nbsp;&nbsp;†&nbsp;&nbsp;&nbsp;&nbsp;†</sub></p>
 
@@ -86,7 +86,7 @@ Python automations that removed recurring manual work from the support team — 
 First complete full-stack project. FastAPI backend with SQLAlchemy and a layered architecture, React frontend with React Query and optimistic updates, Vitest tests, fully containerized with Docker Compose.
 
 <p>
-  <a href="https://github.com/M4rcosz/YOUR-REPO"><img src="https://img.shields.io/badge/REPOSITORY-000000?style=flat-square&logo=github&logoColor=B01030&labelColor=8B0000"></a>
+  <a href="https://github.com/M4rcosz/YOUR-REPO"><img src="https://img.shields.io/badge/REPOSITORY-0D0D10?style=flat-square&logo=github&logoColor=F2ECEC&labelColor=8B0000"></a>
 </p>
 
 <p align="center"><sub>†&nbsp;&nbsp;&nbsp;&nbsp;†&nbsp;&nbsp;&nbsp;&nbsp;†</sub></p>
