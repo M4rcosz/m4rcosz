@@ -1,68 +1,126 @@
-<h1 align="center">Marcos</h1>
 <p align="center">
-  <strong>Backend Developer em formação · Caminho para DevOps</strong><br>
-  Analista de Suporte @ cVortex
+  <img src="./assets/header-goth.svg" alt="Marcos — Backend Engineer" width="100%">
 </p>
 
----
+<p align="center">
+  <a href="https://linkedin.com/in/m4rcosz"><img src="https://img.shields.io/badge/LINKEDIN-000000?style=for-the-badge&logo=linkedin&logoColor=B01030&labelColor=000000"></a>
+  <img src="https://img.shields.io/badge/OPEN_TO_REMOTE-000000?style=for-the-badge&labelColor=8B0000">
+  <img src="https://img.shields.io/badge/UTC−3-000000?style=for-the-badge&labelColor=000000">
+</p>
 
-### Sobre
+<p align="center"><sub>✝&nbsp;&nbsp;&nbsp;◆&nbsp;&nbsp;&nbsp;✝</sub></p>
 
-Atuo no suporte técnico da cVortex enquanto construo carreira em desenvolvimento backend, com objetivo de atuar com infraestrutura e DevOps. Meu foco é entender o que acontece além do código que roda em `localhost`: APIs robustas, bancos de dados bem modelados, containers, automação e o que mantém um sistema de pé em produção.
+I build backends meant for production, not for `localhost`: well-defined API contracts, data that stays consistent under concurrency, automated tests, and continuous delivery. At cVortex I turned manual support workflows into Python automations and worked on LLM integrations — Gemini API, RAG pipeline — which put me in direct contact with what an unreliable system actually costs the people using it.
 
-### 🎯 Foco atual
+> [!NOTE]
+> Currently focused on backend services that treat LLMs as a dependency like any other: retries, cost awareness, and failure modes that don't take the request down with them.
 
-- **Backend principal:** Node.js / NestJS / TypeScript
-- **Backend secundário:** Python / FastAPI
-- **Bancos:** PostgreSQL, MongoDB
-- **Containers:** Docker (em aprofundamento — Compose, volumes, networks)
+<p align="center"><sub>†&nbsp;&nbsp;&nbsp;&nbsp;†&nbsp;&nbsp;&nbsp;&nbsp;†</sub></p>
 
-### 📚 Estudando agora
+<h2>&#8224; &nbsp;<i>I.</i> &nbsp;N E X I O<br><sub><sup>full-stack commerce platform</sup></sub></h2>
 
-- Linux e shell scripting (uso real, não só comandos básicos)
-- GitHub Actions e pipelines de CI/CD
-- Fundamentos de AWS (EC2, S3, IAM)
-- Boas práticas de API: autenticação, versionamento, observabilidade
+An e-commerce monorepo built from scratch, focused on the problems that only show up once money and concurrency are involved.
 
-### 🛠️ Stack
+```mermaid
+%%{init: {'theme':'base','themeVariables':{
+  'primaryColor':'#0D0D10','primaryTextColor':'#EDE7E7','primaryBorderColor':'#B01030',
+  'lineColor':'#8B0000','secondaryColor':'#000000','tertiaryColor':'#000000',
+  'fontFamily':'Georgia, serif','clusterBkg':'#000000','clusterBorder':'#8B0000',
+  'edgeLabelBackground':'#000000'
+}}}%%
+flowchart LR
+    U([Client]) --> W["Next.js storefront<br/>i18n PT/EN"]
+    W --> A
 
-**Backend & APIs**
+    subgraph API["nexio-core · NestJS"]
+        direction TB
+        A["Auth layer<br/>JWT + Argon2id + RBAC"] --> UC["Use cases<br/>application layer"]
+        UC --> D["Domain<br/>entities · invariants"]
+        UC --> R["Repositories<br/>Prisma"]
+    end
 
-![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat&logo=nodedotjs&logoColor=white)
-![NestJS](https://img.shields.io/badge/NestJS-E0234E?style=flat&logo=nestjs&logoColor=white)
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat&logo=typescript&logoColor=white)
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
-![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat&logo=fastapi&logoColor=white)
-![Prisma](https://img.shields.io/badge/Prisma-2D3748?style=flat&logo=prisma&logoColor=white)
+    R --> DB[("PostgreSQL<br/>optimistic locking")]
+    P{{"Payment provider"}} -.->|"at-least-once<br/>webhook"| IDK["Idempotency guard"]
+    IDK --> UC
 
-**Bancos de dados**
+    style U fill:#000000,stroke:#B01030,color:#EDE7E7
+    style DB fill:#000000,stroke:#B01030,color:#EDE7E7
+    style P fill:#000000,stroke:#B01030,color:#EDE7E7
+    style IDK fill:#8B0000,stroke:#B01030,color:#FFFFFF
+```
 
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat&logo=postgresql&logoColor=white)
-![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=flat&logo=mysql&logoColor=white)
-![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=flat&logo=mongodb&logoColor=white)
+<details>
+<summary><b>&#8224; &nbsp;Engineering decisions worth defending</b></summary>
+<br>
 
-**DevOps & Tooling**
+| | |
+|---|---|
+| **Idempotent webhooks** | Provider redelivery never double-charges |
+| **Decimal-safe money** | No floating-point arithmetic anywhere on monetary values |
+| **Optimistic locking** | Race conditions on stock and orders fail loudly, not silently |
+| **Argon2id + JWT** | OWASP 2025 guidance, refresh tokens, role-based access |
+| **Clean Architecture · DDD** | Domain isolated from framework and infrastructure |
+| **Vitest + GitHub Actions** | Tests and CI gate every push |
 
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white)
-![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat&logo=linux&logoColor=black)
-![Git](https://img.shields.io/badge/Git-F05032?style=flat&logo=git&logoColor=white)
-![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat&logo=githubactions&logoColor=white)
-![Postman](https://img.shields.io/badge/Postman-FF6C37?style=flat&logo=postman&logoColor=white)
+</details>
 
-**Também tenho experiência com:** JavaScript · React · Next.js · Tailwind · HTML/CSS
+> [!TIP]
+> **The decision that taught me the most:** treating the payment webhook as *at-least-once* delivery instead of *exactly-once*. The idempotency key fixed the symptom — understanding the provider's actual guarantee changed how I model every external integration since.
 
-### 📌 Projetos em destaque
+<p>
+  <a href="https://github.com/M4rcosz/raizes-do-nordeste"><img src="https://img.shields.io/badge/BACKEND-000000?style=flat-square&logo=nestjs&logoColor=B01030&labelColor=8B0000"></a>
+  <a href="https://github.com/M4rcosz/nexio-frontend"><img src="https://img.shields.io/badge/STOREFRONT-000000?style=flat-square&logo=nextdotjs&logoColor=B01030&labelColor=8B0000"></a>
+  <a href="https://YOUR-DEMO-LINK"><img src="https://img.shields.io/badge/▶_LIVE_DEMO-000000?style=flat-square&labelColor=B01030"></a>
+</p>
 
-> Raizes do Nordeste: [https://github.com/M4rcosz/raizes-do-nordeste](https://github.com/M4rcosz/raizes-do-nordeste).
+<p align="center"><sub>†&nbsp;&nbsp;&nbsp;&nbsp;†&nbsp;&nbsp;&nbsp;&nbsp;†</sub></p>
 
-### 📫 Contato
+<h2>&#8224; &nbsp;<i>II.</i> &nbsp;S U P P O R T &nbsp; A U T O M A T I O N &nbsp; &amp; &nbsp; L L M<br><sub><sup>cVortex</sup></sub></h2>
 
-- **LinkedIn:** [linkedin.com/in/m4rcosz](https://linkedin.com/in/m4rcosz)
-- **E-mail:** zmarcos0103@gmail.com
+Python automations that removed recurring manual work from the support team — data extraction, reporting, ticket triage — saving hours per month. I also worked on Gemini API integrations and a RAG pipeline over our internal knowledge base: chunking and retrieval strategy, prompt structure, and handling the cases where the model returns nothing useful.
 
----
+<sub>`Proprietary code` — happy to walk through the architecture and trade-offs in a conversation.</sub>
+
+<p align="center"><sub>†&nbsp;&nbsp;&nbsp;&nbsp;†&nbsp;&nbsp;&nbsp;&nbsp;†</sub></p>
+
+<h2>&#8224; &nbsp;<i>III.</i> &nbsp;T O - D O &nbsp; A P P<br><sub><sup>FastAPI + React</sup></sub></h2>
+
+First complete full-stack project. FastAPI backend with SQLAlchemy and a layered architecture, React frontend with React Query and optimistic updates, Vitest tests, fully containerized with Docker Compose.
+
+<p>
+  <a href="https://github.com/M4rcosz/YOUR-REPO"><img src="https://img.shields.io/badge/REPOSITORY-000000?style=flat-square&logo=github&logoColor=B01030&labelColor=8B0000"></a>
+</p>
+
+<p align="center"><sub>†&nbsp;&nbsp;&nbsp;&nbsp;†&nbsp;&nbsp;&nbsp;&nbsp;†</sub></p>
+
+<h2>&#8224; &nbsp;<i>IV.</i> &nbsp;A R S E N A L</h2>
+
+| | |
+|:--|:--|
+| **Backend** | Node.js · NestJS · TypeScript · Python · FastAPI · REST |
+| **Data** | PostgreSQL · Prisma · MongoDB · relational modeling · migrations |
+| **AI** | Gemini API · RAG pipelines · prompt design for production use |
+| **Infra** | Docker · Compose · GitHub Actions · Linux (WSL2) · Git · Postman |
+| **Frontend** | React · Next.js · Tailwind |
+
+<details>
+<summary><b>&#8224; &nbsp;Building next</b></summary>
+<br>
+
+- Semantic search over the Nexio catalog using embeddings in PostgreSQL
+- Observability for Node services: structured logging, health checks, metrics
+- Deeper CI/CD: automated build, tests, migrations, and deploy in one pipeline
+
+</details>
+
+<p align="center"><sub>✝&nbsp;&nbsp;&nbsp;◆&nbsp;&nbsp;&nbsp;✝</sub></p>
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=M4rcosz&show_icons=true&hide_border=true&theme=tokyonight" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=M4rcosz&layout=compact&hide_border=true&theme=tokyonight" />
+  <a href="https://linkedin.com/in/m4rcosz">linkedin.com/in/m4rcosz</a>
+  &nbsp;&#8224;&nbsp;
+  <a href="mailto:zmarcos0103@gmail.com">zmarcos0103@gmail.com</a>
+</p>
+
+<p align="center">
+  <sub><i>build &#183; ship &#183; automate &#183; repeat</i></sub>
 </p>
