@@ -17,7 +17,7 @@ I build backends meant for production, not for `localhost`: well-defined API con
 
 <h2>&#8224; &nbsp;<i>I.</i> &nbsp;N E X I O<br><sub><sup>full-stack commerce platform</sup></sub></h2>
 
-An e-commerce monorepo built from scratch, focused on the problems that only show up once money and concurrency are involved.
+An e-commerce built from scratch, focused on the problems that only show up once money and concurrency are involved.
 
 ```mermaid
 %%{init: {'theme':'base','themeVariables':{
