@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./assets/header-goth.svg" alt="Marcos — Backend Engineer" width="100%">
+  <img src="./assets/header.svg" alt="Marcos — Backend Engineer" width="100%">
 </p>
 
 <p align="center">
@@ -7,8 +7,6 @@
   <img src="https://img.shields.io/badge/OPEN_TO_REMOTE-000000?style=for-the-badge&labelColor=8B0000">
   <img src="https://img.shields.io/badge/UTC−3-000000?style=for-the-badge&labelColor=000000">
 </p>
-
-<p align="center"><sub>✝&nbsp;&nbsp;&nbsp;◆&nbsp;&nbsp;&nbsp;✝</sub></p>
 
 I build backends meant for production, not for `localhost`: well-defined API contracts, data that stays consistent under concurrency, automated tests, and continuous delivery. At cVortex I turned manual support workflows into Python automations and worked on LLM integrations — Gemini API, RAG pipeline — which put me in direct contact with what an unreliable system actually costs the people using it.
 
@@ -70,7 +68,7 @@ flowchart LR
 <p>
   <a href="https://github.com/M4rcosz/raizes-do-nordeste"><img src="https://img.shields.io/badge/BACKEND-000000?style=flat-square&logo=nestjs&logoColor=B01030&labelColor=8B0000"></a>
   <a href="https://github.com/M4rcosz/nexio-frontend"><img src="https://img.shields.io/badge/STOREFRONT-000000?style=flat-square&logo=nextdotjs&logoColor=B01030&labelColor=8B0000"></a>
-  <a href="https://YOUR-DEMO-LINK"><img src="https://img.shields.io/badge/▶_LIVE_DEMO-000000?style=flat-square&labelColor=B01030"></a>
+  <a href="https://nexio-frontend-wheat.vercel.app"><img src="https://img.shields.io/badge/▶_LIVE_DEMO-000000?style=flat-square&labelColor=B01030"></a>
 </p>
 
 <p align="center"><sub>†&nbsp;&nbsp;&nbsp;&nbsp;†&nbsp;&nbsp;&nbsp;&nbsp;†</sub></p>
@@ -113,10 +111,10 @@ First complete full-stack project. FastAPI backend with SQLAlchemy and a layered
 
 </details>
 
-<p align="center"><sub>✝&nbsp;&nbsp;&nbsp;◆&nbsp;&nbsp;&nbsp;✝</sub></p>
-
 <p align="center">
   <a href="https://linkedin.com/in/m4rcosz">linkedin.com/in/m4rcosz</a>
+  &nbsp;&#8224;&nbsp;
+  <a href="https://m4rcosz.com">m4rcosz.com</a>
   &nbsp;&#8224;&nbsp;
   <a href="mailto:zmarcos0103@gmail.com">zmarcos0103@gmail.com</a>
 </p>
