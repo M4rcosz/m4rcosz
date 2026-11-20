@@ -59,9 +59,18 @@ flowchart LR
 
 *Proprietary code — happy to discuss the architecture and trade-offs in conversation.*
 
-### To-Do App — FastAPI + React
+### zNuvo — Omnichannel Customer Support SaaS
 
-Full-stack application with a layered FastAPI backend (SQLAlchemy), a React frontend using React Query with optimistic updates, Vitest tests, and a fully containerized setup with Docker Compose.
+A multi-tenant support platform where companies connect their channels (an embeddable website chat widget, WhatsApp, Instagram) and their agents answer every conversation from a single real-time dashboard, in Portuguese or English. Currently in active development (v0.5.0).
+
+- **Services:** NestJS API, a Go realtime service over WebSockets, a React dashboard and a lightweight Preact widget, all behind a Caddy gateway
+- **Messaging and data:** PostgreSQL with separate least-privilege roles, an outbox relay to NATS JetStream, Redis for rate limiting and single-use WebSocket tickets
+- **Identity and security:** Zitadel (OIDC + PKCE), customer-signed identity verification, per-key CSP `frame-ancestors` for the widget, strict CSP on the dashboard
+- **Features:** conversation routing, agent presence and typing indicators, roles and permissions, invitations, and a contact merge engine with undo
+- **Quality:** Vitest with Testcontainers, Go race-detector tests, Playwright end-to-end tests, k6 load tests, OpenTelemetry observability, and a GitHub Actions CI pipeline
+- **Architecture:** decisions recorded as ADRs, with Protobuf contracts shared between the TypeScript and Go services
+
+*Private repository — happy to walk through the architecture in conversation.*
 
 ---
 
@@ -69,8 +78,8 @@ Full-stack application with a layered FastAPI backend (SQLAlchemy), a React fron
 
 | Area | Technologies |
 |:--|:--|
-| **Backend** | Node.js · NestJS · TypeScript · Python · FastAPI · REST |
-| **Data** | PostgreSQL · Prisma · MongoDB · relational modeling · migrations |
+| **Backend** | Node.js · NestJS · TypeScript · Go · Python · FastAPI · REST · WebSockets |
+| **Data & Messaging** | PostgreSQL · Prisma · MongoDB · Redis · NATS JetStream · migrations |
 | **AI** | Gemini API · RAG pipelines · production prompt design |
 | **Infrastructure** | Docker · Docker Compose · GitHub Actions · Linux · Git · Postman |
 | **Frontend** | React · Next.js · Tailwind CSS |
