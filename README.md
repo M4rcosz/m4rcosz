@@ -61,7 +61,7 @@ flowchart LR
 
 ### zNuvo — Omnichannel Customer Support SaaS
 
-A multi-tenant support platform where companies connect their channels (an embeddable website chat widget, WhatsApp, Instagram) and their agents answer every conversation from a single real-time dashboard, in Portuguese or English. Currently in active development (v0.5.0).
+A multi-tenant support platform where companies connect their channels (an embeddable website chat widget, WhatsApp, Instagram) and their agents answer every conversation from a single real-time dashboard, in Portuguese or English. Currently in active development.
 
 - **Services:** NestJS API, a Go realtime service over WebSockets, a React dashboard and a lightweight Preact widget, all behind a Caddy gateway
 - **Messaging and data:** PostgreSQL with separate least-privilege roles, an outbox relay to NATS JetStream, Redis for rate limiting and single-use WebSocket tickets
